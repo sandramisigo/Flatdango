@@ -17,7 +17,7 @@ movieDetails.innerHTML = `
 <h2> ${data.title} </h2>
 <img src="${data.poster}" alt = "${data.title}">
 <p>Runtime: ${data.runtime} min </p>
-<p>Showtime: ${data.runtime} </p>
+<p>Showtime: ${data.showtime} </p>
 <p> Available Tickets:${data.capacity-data.tickets_sold}</p>
 `;
 //adding event listener to buyTicketButton
@@ -28,7 +28,7 @@ availableTickets.textContent = `Available Tickets ${parseInt(availableTickets.te
 });
 
 //fetching all movies and populating the list
-fetch('http://localhost:3000/')
+fetch('http://localhost:3000/films')
 .then(response => response.json())
 .then(data =>{
     filmsList.removeChild(filmsList.firstChild) //to remove the placeholder from list
@@ -36,7 +36,22 @@ fetch('http://localhost:3000/')
     data.forEach(movie => {
         const listItem = document.createElement('li');
         listItem.textContent = movie.title;
+        listItem.classList.add('film','item');
         filmsList.appendChild(listItem);
-    
+
+        //adding eventlister to list items
+listItem.addEventListener('click',()=> {
+    fetch(`http://localhost:3000/films/${movie.id}`) //fetches details of last clicked movie and updates mov.list section
+    .then(response => response.json())
+    .then(movieData => {
+        // updating the movie details section with new movie data
+        movieDetails.innerHTML = `
+        <h2> ${movieData.title} </h2>
+        <img src="${movieData.poster}" alt = "${movieData.title}">
+        <p>Runtime: ${movieData.runtime} min </p>
+        <p>Showtime: ${movieData.showtime} </p>
+        <p> Available Tickets:${movieData.capacity-movieData.tickets_sold}</p>`;
+         })
+      })
    });
 })
