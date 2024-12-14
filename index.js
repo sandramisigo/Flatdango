@@ -7,6 +7,11 @@ const buyTicketButton =document.getElementById('buy-ticket-button');
 fetch ('http://localhost:3000/films/1')
 .then(response => response.json())
 .then(data => {
+    const placeholder = filmsList.querySelector("li"); // Select the first <li> in the <ul>
+
+    if (placeholder && placeholder.textContent === "Placeholder") {
+        placeholder.remove(); // Remove the <li> with "Placeholder"
+    }
 // updating the movie details section
 movieDetails.innerHTML = `
 <h2> ${data.title} </h2>
