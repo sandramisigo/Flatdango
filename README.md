@@ -31,7 +31,7 @@
       * Runtime
       * Showtime
       * Available Tickets (calculated by subtracting number of `tickets_sold` from the theater's `capacity`).
-    * Fetch data from the JSON server endpoint. `GET /films/1`.
+    Fetch data from the JSON server endpoint. `GET /films/1`.
 
    2. **Display a Menu of All Movies**
 
