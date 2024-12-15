@@ -1,3 +1,4 @@
+
 const movieDetails = document.getElementById('movie-details');
 const filmsList = document.getElementById('films');
 const buyTicketButton = document.getElementById('buy-ticket-button');

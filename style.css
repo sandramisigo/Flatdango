@@ -1,1 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 14px; 
+    margin: 0;
+    padding: 0;
+    background-color: #007bff;
+    box-sizing: border-box;
+    line-height: 1.4; 
+}
 
+#films li {
+    background-color: #fff;
+    padding: 10px;
+    margin: 8px 0;
+    font-size: 1rem; 
+    border-radius: 8px;
+    box-shadow: 0 6px 16px rgba(201, 17, 48, 0.6);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+#films li:hover {
+    background-color: #033c71;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+    transform: translateY(-1px); 
+}
+
+h1{
+    font-family: Helvetica ;
+    font-size: 30px;
+    text-align: center;
+    background-color: rgb(20, 127, 220); 
+    
+}
+.container {
+    padding: 20px;
+    max-width: 500px; 
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    position: relative; 
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#films li .film-info {
+    font-size: 0.9rem; 
+    color: #0fa38f;
+}
+
+#films li.sold-out {
+    background-color: #f8d7da;
+    text-decoration: line-through;
+    color: #e6109e;
+}
+
+#films li.sold-out:hover {
+    background-color: #0bb311;
+    box-shadow: none;
+    transform: none;
+}
+
+#movie-details {
+    padding: 10px;
+    max-width: 100%; 
+    font-size: 25px; 
+    float: right;
+    text-align: center;
+    margin-right: 110px;
+    margin-bottom: 0px;
+    color: rgb(92, 5, 57);
+
+}
+
+#movie-details h2 {
+    font-size: 40px; 
+    margin-top: -30px;
+}
+
+#movie-details img {
+    width: 600px;
+    height: 600px;
+    float: right;
+    margin-bottom: 20px;
+    margin-top: -20px;
+}
+
+#buy-ticket-button {
+    font-size: 20px; 
+    padding: 10px 15px;
+    background-color: #470a03;
+    color: white;
+    box-shadow: 0 6px 6px rgb(112, 3, 3);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 960px;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+#buy-ticket-button:hover {
+    background-color: #eb1d06;
+}
