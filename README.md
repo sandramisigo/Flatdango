@@ -24,14 +24,14 @@
 
  ## Core Deliverables
 
-  1. **Display First Movies** 
-    Uponing loading the page, details of the firt movie should be displayed, such as;
-     * Title
-     * Poster
-     * Runtime
-     * Showtime
-     * Available Tickets (calculated by subtracting number of `tickets_sold` from the theater's `capacity`)
-    Fetch data from the JSON server endpoint. `GET /films/1`.
+   1. **Display First Movie Details** 
+    - Uponing loading the page, details of the firt movie should be displayed, such as;
+      * Title
+      * Poster
+      * Runtime
+      * Showtime
+      * Available Tickets (calculated by subtracting number of `tickets_sold` from the theater's `capacity`)
+    - Fetch data from the JSON server endpoint. `GET /films/1`.
 
    2. **Display a Menu of All Movies**
 
@@ -39,7 +39,6 @@
       * Each movie title is listed under the ul#films element.
       * Data is fetched from the JSON server endpoint: `GET /films`.
 
-    Buy a Ticket:
 
    3. **Buy Ticket Button**
       * Allows users to purchase tickets for the currently displayed movie.
@@ -49,54 +48,54 @@
 
   ## Bonus Deliverables
      1. **Fetches movie data on demand from the server**
-     * Clicking a movie title in the menu replaces the currently displayed movie’s details with the selected movie’s details.
-     * Fetches movie data on demand from the server.
+          * Clicking a movie title in the menu replaces the currently displayed movie’s details with the selected movie’s details.
+          * Fetches movie data on demand from the server.
      2. **Indicate Sold-Out Movies**
-     * Once tickets for a movie are sold out, the "Buy Ticket" button changes to "Sold Out."
-     * In the movies menu, sold-out movies are marked by adding a sold-out class to their list item.
+          * Once tickets for a movie are sold out, the "Buy Ticket" button changes to "Sold Out."
+          * In the movies menu, sold-out movies are marked by adding a sold-out class to their list item.
    
   ## Extra Bonus (Optional)
      1. **Persist Ticket Sales to the Server**
-     * When a user purchases a ticket, the updated tickets_sold value is persisted to the backend.
-     * Use a PATCH request to update the number of tickets sold.
+          * When a user purchases a ticket, the updated tickets_sold value is persisted to the backend.
+          * Use a PATCH request to update the number of tickets sold.
      2. **Delete a Movie**
-     * Adding a "Delete" button next to each movie in the menu.
-     * Clicking the button deletes the movie from both the frontend and the server.
+          * Adding a "Delete" button next to each movie in the menu.
+          * Clicking the button deletes the movie from both the frontend and the server.
 
-## Project Structure
+  ## Project Structure
 
-1. **index.html**: Contains the basic HTML structure and placeholders for movie details and the menu.
-2. **style.css**: This ensures basic styling is done to the application layout.
-3. **index.js**: This is where DOM manipulation, event handling, and server communications are handled.
-4. **db.json**: The JSON file containing movie data for the server.
+    1. **index.html**: Contains the basic HTML structure and placeholders for movie details and the menu.
+    2. **style.css**: This ensures basic styling is done to the application layout.
+    3. **index.js**: This is where DOM manipulation, event handling, and server communications are handled.
+    4. **db.json**: The JSON file containing movie data for the server.
 
-**API Endpoints**
-   * `GET /films`: Retrieve a list of all movies.
-   * `GET /films/`:id: Retrieve the details of a specific movie.
-   * `PATCH /films/`:id: Update the number of tickets sold for a movie.
-   * `DELETE /films/`:id: Delete a movie from the server.
+  **API Endpoints**
+    * `GET /films`: Retrieve a list of all movies.
+    * `GET /films/`:id: Retrieve the details of a specific movie.
+    * `PATCH /films/`:id: Update the number of tickets sold for a movie.
+    * `DELETE /films/`:id: Delete a movie from the server.
 
  ## Getting Started
 
- **Prerequisites**
- 1. **Node.js**: Ensure you have Node.js installed on your machine to run the JSON server.
- 2. **JSON Server**: You'll need to set up a local JSON server using the db.json file provided.
+  **Prerequisites**
+   1. **Node.js**: Ensure you have Node.js installed on your machine to run the JSON server.
+   2. **JSON Server**: You'll need to set up a local JSON server using the db.json file provided.
 
  ## Setup Instructions
 
   1. **Clone the Repository:**
 
-   * git clone [https://github.com/sandramisigo/Flatdango](https://github.com/sandramisigo/Flatdango)
-   * cd Flatdango
+       * git clone [https://github.com/sandramisigo/Flatdango](https://github.com/sandramisigo/Flatdango)
+       * cd Flatdango
 
   2. **Install JSON Server:**
 
-   * npm install -g json-server
+       * npm install -g json-server
 
   3. **Run the JSON Server:**
-   * json-server --watch db.json
-   * The server will run on `http://localhost:3000/`.
-   * You can now access the movie data from the endpoint `http://localhost:3000/films`.
+       * json-server --watch db.json
+       * The server will run on `http://localhost:3000/`.
+       * You can now access the movie data from the endpoint `http://localhost:3000/films`.
 
   4. **Open the Application:**
 
@@ -105,13 +104,13 @@
 
  ## **License**
 
- This project is open-source and free to use under the MIT License. Feel free to modify and share as needed.
+  This project is open-source and free to use under the MIT License. Feel free to modify and share as needed.
 
  **Author:** 
- Sandra Misigo
+  Sandra Misigo
 
  **Contact:**
- For any questions or incase you experience challenges, feel free to contact me via [sandra.misigo@student.moringaschool.com]. Good luck!
+  For any questions or incase you experience challenges, feel free to contact me via [sandra.misigo@student.moringaschool.com]. Good luck!
 
 
 
