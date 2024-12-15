@@ -26,7 +26,7 @@
 
    1. **Display First Movie Details** :
     - Fetch data from the JSON server endpoint. `GET /films/1`.
-    - Upon loading the page, details of the firt movie should be displayed, such as;
+    Then when the page loads, details of the firt movie should be displayed, such as;
       * Title
       * Poster
       * Runtime
