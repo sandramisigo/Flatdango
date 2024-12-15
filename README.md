@@ -79,8 +79,8 @@ The project utilizes a pre-defined `db.json` file that stores movie data. This f
 ## Getting Started
 
 **Prerequisites**
-1. **Node.js** Ensure you have Node.js installed on your machine to run the JSON server.
-2. **JSON Server**You'll need to set up a local JSON server using the db.json file provided.
+1. **Node.js** :Ensure you have Node.js installed on your machine to run the JSON server.
+2. **JSON Server**: You'll need to set up a local JSON server using the db.json file provided.
 
 ## Setup Instructions
 
