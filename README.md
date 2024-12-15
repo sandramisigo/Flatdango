@@ -25,13 +25,14 @@
  ## Core Deliverables
 
    1. **Display First Movie Details** :
-    Upon loading the page, details of the firt movie should be displayed, such as;
+    - Fetch data from the JSON server endpoint. `GET /films/1`.
+    - Upon loading the page, details of the firt movie should be displayed, such as;
       * Title
       * Poster
       * Runtime
       * Showtime
       * Available Tickets (calculated by subtracting number of `tickets_sold` from the theater's `capacity`).
-    Fetch data from the JSON server endpoint. `GET /films/1`.
+   
 
    2. **Display a Menu of All Movies**
 
