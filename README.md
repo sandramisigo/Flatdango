@@ -56,7 +56,7 @@
      2. **Indicate Sold-Out Movies**
           * Once tickets for a movie are sold out, the "Buy Ticket" button changes to "Sold Out."
           * In the movies menu, sold-out movies are marked by adding a sold-out class to their list item.
-          
+
   ## Project Structure
 
     1. **index.html**: Contains the basic HTML structure and placeholders for movie details and the menu.
@@ -70,13 +70,13 @@
     * `PATCH /films/`:id: Update the number of tickets sold for a movie.
     * `DELETE /films/`:id: Delete a movie from the server.
 
- ## Getting Started
+  ## Getting Started
 
   **Prerequisites**
    1. **Node.js**: Ensure you have Node.js installed on your machine to run the JSON server.
    2. **JSON Server**: You'll need to set up a local JSON server using the db.json file provided.
 
- ## Setup Instructions
+  ## Setup Instructions
 
   1. **Clone the Repository:**
 
@@ -96,15 +96,18 @@
 
     * Open `index.html` in your browser to view and interact with the app.
 
+  ## **Conclusion**
 
- ## **License**
+  This project provides a simple yet effective way to to ensure movie browsing and movie ticket purchasing using web technologies. It's ideal for practicing basic front-end development skills, including DOM manipulation, event handling, and local storage management.
+
+  ## **License**
 
   This project is open-source and free to use under the MIT License. Feel free to modify and share as needed.
 
- **Author:** 
+  **Author:** 
   Sandra Misigo
 
- **Contact:**
+  **Contact:**
   For any questions or incase you experience challenges, feel free to contact me via [sandra.misigo@student.moringaschool.com]. Good luck!
 
 
