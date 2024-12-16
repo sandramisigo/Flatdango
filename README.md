@@ -56,15 +56,7 @@
      2. **Indicate Sold-Out Movies**
           * Once tickets for a movie are sold out, the "Buy Ticket" button changes to "Sold Out."
           * In the movies menu, sold-out movies are marked by adding a sold-out class to their list item.
-   
-  ## Extra Bonus (Optional)
-     1. **Persist Ticket Sales to the Server**
-          * When a user purchases a ticket, the updated tickets_sold value is persisted to the backend.
-          * Use a PATCH request to update the number of tickets sold.
-     2. **Delete a Movie**
-          * Adding a "Delete" button next to each movie in the menu.
-          * Clicking the button deletes the movie from both the frontend and the server.
-
+          
   ## Project Structure
 
     1. **index.html**: Contains the basic HTML structure and placeholders for movie details and the menu.
