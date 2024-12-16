@@ -1,6 +1,8 @@
 # Flatdango  
  Welcome to Flatdango! An online ticket browsing and purchasing platform for Flatiron Movie Theater. This project is designed to demonstrate the use of Javascript for Dom manipulation, event handling and communication with a JSON server backend enabling users to effortlessly buy tickets for their favorite movies.
 
+ Here is the live link to the Flatdango application: <https://sandramisigo.github.io/Flatdango/>
+
  ## Project Learning goals
  - To gain hands-on experience to manipulate the Document Objects Model,(DOM).
  - Master event handling to create interactive elements within the web.
